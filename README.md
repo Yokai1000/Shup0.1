@@ -1,12 +1,12 @@
-# {{APLICATION NAME}}
+# SHUP
 
 ## Mobile
 
-Application mobile avec **Xamarin**.
+Application mobile avec **Android Studio / Java**.
 
 ## WebApp
 
-Application web avec **NodeJs** et **React**
+Application web avec **Sympfony**
 
 ## Application
 
