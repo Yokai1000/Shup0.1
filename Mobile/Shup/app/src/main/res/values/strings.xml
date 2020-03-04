@@ -9,4 +9,9 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <!-- String related to user account -->
+    <string name="yname">Your name here</string>
+    <string name="yemail">Your email here</string>
+    <string name="yaddress">Your address here</string>
+
 </resources>
