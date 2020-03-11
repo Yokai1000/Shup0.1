@@ -19,7 +19,7 @@ public class ShopObjectFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_collection_shop, container, false);
+        View view = inflater.inflate(R.layout.fragment_home_shop, container, false);
         textView = view.findViewById(R.id.textView);
         textView.setText("Vue fragment Shop");
         return view;

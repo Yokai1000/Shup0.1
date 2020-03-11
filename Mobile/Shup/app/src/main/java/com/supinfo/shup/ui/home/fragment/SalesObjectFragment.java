@@ -19,7 +19,7 @@ public class SalesObjectFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_collection_sales, container, false);
+        View view = inflater.inflate(R.layout.fragment_home_sales, container, false);
         textView = view.findViewById(R.id.textView);
         textView.setText("Vue Sales");
         return view;

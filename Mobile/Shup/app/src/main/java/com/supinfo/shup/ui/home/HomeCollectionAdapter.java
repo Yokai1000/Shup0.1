@@ -13,7 +13,6 @@ import com.supinfo.shup.ui.home.fragment.ShopObjectFragment;
 
 public class HomeCollectionAdapter extends FragmentStatePagerAdapter {
 
-    private Fragment fragment;
     HomeCollectionAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -21,6 +20,7 @@ public class HomeCollectionAdapter extends FragmentStatePagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
+        Fragment fragment;
         switch (position){
             case 1:
                 fragment = new CartObjectFragment();
