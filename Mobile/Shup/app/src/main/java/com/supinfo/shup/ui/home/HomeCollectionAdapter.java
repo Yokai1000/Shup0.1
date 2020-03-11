@@ -4,28 +4,59 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
-public class HomeCollectionAdapter extends FragmentStateAdapter {
+import com.supinfo.shup.ui.home.fragment.CartObjectFragment;
+import com.supinfo.shup.ui.home.fragment.SalesObjectFragment;
+import com.supinfo.shup.ui.home.fragment.ShopObjectFragment;
 
-    HomeCollectionAdapter(Fragment fragment) {
-        super(fragment);
+public class HomeCollectionAdapter extends FragmentStatePagerAdapter {
+
+    private Fragment fragment;
+    HomeCollectionAdapter(FragmentManager fm) {
+        super(fm);
     }
 
     @NonNull
     @Override
-    public Fragment createFragment(int position) {
-        // Return a NEW fragment instance in createFragment(int)
-        Fragment fragment = new ShopObjectFragment();
+    public Fragment getItem(int position) {
+        switch (position){
+            case 1:
+                fragment = new CartObjectFragment();
+            break;
+            case 2:
+                fragment = new SalesObjectFragment();
+            break;
+            default:
+                fragment = new ShopObjectFragment();
+            break;
+        }
         Bundle args = new Bundle();
-        // Our object is just an integer :-P
-        args.putInt(ShopObjectFragment.ARG_OBJECT, position + 1);
+        args.putInt(ShopObjectFragment.ARG_OBJECT, position);
         fragment.setArguments(args);
         return fragment;
     }
 
     @Override
-    public int getItemCount() {
-        return 100;
+    public int getCount() {
+        return 3;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        String title = "";
+        switch (position){
+            case 0:
+                title = "Shopping";
+                break;
+            case 1:
+                title = "Sales";
+                break;
+            case 2:
+                title = "My Cart";
+                break;
+        }
+        return title;
     }
 }
