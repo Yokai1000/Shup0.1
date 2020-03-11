@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.supinfo.shup.R;
+import com.supinfo.shup.ui.home.HomeActivity;
 import com.supinfo.shup.ui.login.LoginViewModel;
 import com.supinfo.shup.ui.login.LoginViewModelFactory;
 
@@ -112,9 +114,10 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadingProgressBar.setVisibility(View.VISIBLE);
-                loginViewModel.login(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
+               // loadingProgressBar.setVisibility(View.VISIBLE);
+               // loginViewModel.login(usernameEditText.getText().toString(),
+               //         passwordEditText.getText().toString());
+                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
             }
         });
     }
