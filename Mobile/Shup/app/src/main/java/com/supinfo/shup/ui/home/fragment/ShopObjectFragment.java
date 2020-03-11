@@ -1,6 +1,5 @@
 package com.supinfo.shup.ui.home.fragment;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,14 +10,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.material.tabs.TabLayout;
 import com.supinfo.shup.R;
-
-import org.w3c.dom.Text;
 
 public class ShopObjectFragment extends Fragment {
     private TextView textView;
-    public static final String ARG_OBJECT = "object";
 
     @Nullable
     @Override

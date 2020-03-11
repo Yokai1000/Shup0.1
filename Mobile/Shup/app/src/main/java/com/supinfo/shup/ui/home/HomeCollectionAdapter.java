@@ -33,7 +33,6 @@ public class HomeCollectionAdapter extends FragmentStatePagerAdapter {
             break;
         }
         Bundle args = new Bundle();
-        args.putInt(ShopObjectFragment.ARG_OBJECT, position);
         fragment.setArguments(args);
         return fragment;
     }
