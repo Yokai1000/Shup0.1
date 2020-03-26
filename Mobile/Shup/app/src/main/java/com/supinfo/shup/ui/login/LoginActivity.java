@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.supinfo.shup.R;
+import com.supinfo.shup.ui.home.UserAccountActivity;
 import com.supinfo.shup.ui.login.LoginViewModel;
 import com.supinfo.shup.ui.login.LoginViewModelFactory;
 
@@ -71,8 +73,8 @@ public class LoginActivity extends AppCompatActivity {
                 if (loginResult.getSuccess() != null) {
                     updateUiWithUser(loginResult.getSuccess());
                 }
-                setResult(Activity.RESULT_OK);
-
+                // setContentView(R.layout.activity_home);
+                //startActivity(new Intent(UserAccountActivity.class, this));
                 //Complete and destroy login activity once successful
                 finish();
             }

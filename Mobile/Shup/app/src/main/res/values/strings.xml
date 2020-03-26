@@ -5,7 +5,8 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="action_sign_up_short">Sign up</string>
+    <string name="welcome">"Welcome on"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
@@ -13,5 +14,6 @@
     <string name="yname">Your name here</string>
     <string name="yemail">Your email here</string>
     <string name="yaddress">Your address here</string>
+    <string name="shup">Shup</string>
 
 </resources>

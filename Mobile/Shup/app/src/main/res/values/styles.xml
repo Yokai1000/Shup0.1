@@ -7,5 +7,11 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="customfontstylebold" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/SF-UI-Display-Bold</item>
+    </style>
+    <style name="customfontstyleregular" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/SF-UI-Display-Regular</item>
+    </style>
 
 </resources>
