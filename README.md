@@ -20,7 +20,7 @@ Répartition des tâches:
 
 Prénom | Mobile | WebApp | Application (Rest) | Documentation |
 :---: | :---: | :---: | :---: | :---:
-Matthias | X |   |   | 
+Matthias | X |   |   | X
 Benjamin |   | X |   | 
 Jean     |   | X |   |
 Guillaume| X |   | X |
