@@ -3,3 +3,4 @@ services:
     Doctrine\Bundle\DoctrineBundle\Command\:
         resource: "@DoctrineBundle/Command/*"
         tags: [console.command]
+        
