@@ -1,14 +1,10 @@
 doctrine:
     dbal:
-        url: '%env(resolve:DATABASE_URL)%'
-
-        # IMPORTANT: You MUST configure your server version,
-        # either here or in the DATABASE_URL env var (see .env file)
-        #server_version: '5.7'
-
-        # only needed for MySQL
+        # configure these for your database server
         driver: 'pdo_pgsql'
         charset: utf8
+
+        url: '%env(resolve:DATABASE_URL)%'
 
         # backtrace queries in profiler (increases memory usage per request)
         #profiling_collect_backtrace: '%kernel.debug%'
